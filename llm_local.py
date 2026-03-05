@@ -2,7 +2,7 @@ from llama_index.llms.llama_cpp import LlamaCPP
 
 def load_llm():
     llm = LlamaCPP(
-        model_path=r"C:\SeamRag\seamrag\models\mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+        model_path=r"your_local_model_path",
         temperature=0.5,
         max_new_tokens=512,
         context_window=4096,
@@ -75,4 +75,5 @@ JSON:
         "confidence": 0,
         "key_claims": [],
         "explanation": text
+
     }
